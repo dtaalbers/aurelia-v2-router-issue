@@ -10,8 +10,7 @@ export class MyFirstPage implements IRouteableComponent {
     public async attached(): Promise<void> {
         console.log('NAVIGATING');
         // Do some logic here, validating the workspace and recirecting the user
-        // to a different page if needed.
-        
-        await this.router.load('/test');
+        // to a different page if needed.        
+        // await this.router.load('/test');
     }
 }

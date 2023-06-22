@@ -4,7 +4,7 @@ export class MyApp implements IRouteableComponent {
     static routes: IRoute[] = [
         {
             id: 'my-first-page',
-            path: '',
+            path: ['', 'first'],
             component: () => import('./views/my-first-page/my-first-page'),
             title: ''
         } as IRoute,
