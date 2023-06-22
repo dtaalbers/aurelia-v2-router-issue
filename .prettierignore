@@ -1,0 +1,8 @@
+# Ignore everything:
+/*
+
+# Except src:
+!/src
+!/webpack.config.js
+!/package.json
+!/tailwind.config.js

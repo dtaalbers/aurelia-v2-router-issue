@@ -3,15 +3,15 @@ import { IRoute, IRouteableComponent } from '@aurelia/router';
 export class MyApp implements IRouteableComponent {
     static routes: IRoute[] = [
         {
-            id: 'my-first-page',
-            path: ['', 'first'],
-            component: () => import('./views/my-first-page/my-first-page'),
+            id: 'validate-workspace-page',
+            path: [''],
+            component: () => import('./views/validate-workspace-page/validate-workspace-page'),
             title: ''
         } as IRoute,
         {
-            id: 'test',
-            path: 'test',
-            component: () => import('./views/test/test'),
+            id: 'starter-page',
+            path: ':workspace',
+            component: () => import('./views/starter-page/starter-page'),
             title: 'Test'
         } as IRoute
     ];
