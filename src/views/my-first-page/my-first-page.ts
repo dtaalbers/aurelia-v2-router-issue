@@ -9,7 +9,9 @@ export class MyFirstPage implements IRouteableComponent {
 
     public async attached(): Promise<void> {
         console.log('NAVIGATING');
-        // Navigate to the app starter.
+        // Do some logic here, validating the workspace and recirecting the user
+        // to a different page if needed.
+        
         await this.router.load('/test');
     }
 }
