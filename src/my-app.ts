@@ -4,15 +4,17 @@ export class MyApp implements IRouteableComponent {
     static routes: IRoute[] = [
         {
             id: 'validate-workspace-page',
-            path: [''],
+            path: '',
             component: () => import('./views/validate-workspace-page/validate-workspace-page'),
-            title: ''
+            title: '',
+            viewport: 'global'
         } as IRoute,
         {
             id: 'starter-page',
             path: ':workspace',
             component: () => import('./views/starter-page/starter-page'),
-            title: 'Test'
+            title: 'Test',
+            viewport: 'global'
         } as IRoute
     ];
 }

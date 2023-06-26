@@ -18,6 +18,7 @@ Aurelia
             useUrlFragmentHash: false,
             useHref: false
         })
+        // TheHook
     )
     // To use HTML5 pushState routes, replace previous line with the following
     // customized router config.

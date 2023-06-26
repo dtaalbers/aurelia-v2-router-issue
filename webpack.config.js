@@ -19,7 +19,7 @@ const postcssLoader = {
     loader: 'postcss-loader',
     options: {
         postcssOptions: {
-            plugins: ['autoprefixer']
+            plugins: [require('tailwindcss')('tailwind.config.js'), 'autoprefixer']
         }
     }
 };
@@ -52,7 +52,8 @@ module.exports = function (env, { analyze }) {
         devServer: {
             historyApiFallback: true,
             open: false,
-            port: 9000
+            port: 9000,
+            hot: false
         },
         module: {
             rules: [
