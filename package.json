@@ -8,7 +8,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "@aurelia/router": "latest",
+    "@aurelia/router": "file:aurelia-router-2.0.0-beta.7.tgz",
     "aurelia": "latest"
   },
   "devDependencies": {

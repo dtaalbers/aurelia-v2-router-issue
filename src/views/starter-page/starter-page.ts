@@ -1,4 +1,4 @@
-import { IRoute, IRouteableComponent } from '@aurelia/router';
+import { IRoute, IRouteableComponent, Parameters } from '@aurelia/router';
 
 export class StarterPage implements IRouteableComponent {
     static routes: IRoute[] = [
@@ -22,4 +22,7 @@ export class StarterPage implements IRouteableComponent {
             viewport: 'starter'
         }
     ];
+
+    // public async loading(parameters: Parameters): Promise<void> {}
+    public loading(parameters: Parameters): void {}
 }
