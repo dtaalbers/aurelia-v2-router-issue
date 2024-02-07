@@ -10,6 +10,13 @@ export class MyApp implements IRouteableComponent {
             viewport: 'global'
         } as IRoute,
         {
+            id: 'redirect',
+            path: 'redirect',
+            component: () => import('./views/redirect-page/redirect-page'),
+            title: 'Redirect',
+            viewport: 'global'
+        } as IRoute,
+        {
             id: 'starter-page',
             path: ':workspace',
             component: () => import('./views/starter-page/starter-page'),
