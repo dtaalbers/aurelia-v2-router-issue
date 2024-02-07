@@ -5,6 +5,7 @@ import { lifecycleHooks } from 'aurelia';
 export class TheHook {
     public async canLoad(component: any, params: Parameters, instruction: RoutingInstruction, nav: Navigation) {
         console.log('TheHook', component.constructor.name);
+
         return true;
     }
 }
