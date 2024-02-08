@@ -2,10 +2,10 @@ import { IRoute, IRouteableComponent } from '@aurelia/router';
 
 export class SecondSection implements IRouteableComponent {
     static routes: IRoute[] = [
-        {
-            path: '',
-            redirectTo: 'second-section-first-child'
-        } as IRoute,
+        // {
+        //     path: '',
+        //     redirectTo: 'second-section-first-child'
+        // } as IRoute,
         {
             id: 'second-section-first-child',
             path: 'second-section-first-child',
