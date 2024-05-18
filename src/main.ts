@@ -18,7 +18,8 @@ Aurelia
     .register(
         RouterConfiguration.customize({
             useUrlFragmentHash: false,
-            useHref: false
+            useHref: false,
+            navigationSyncStates: ['guardedUnload', 'swapped', 'completed', 'guardedLoad']
         }),
         TheHook,
         TheSecondHook
