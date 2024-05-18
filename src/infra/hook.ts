@@ -8,5 +8,6 @@ export class TheHook {
         // return true;
         if (instruction.component.name === 'redirect-page') return true;
         return '/redirect';
+        // return true;
     }
 }
