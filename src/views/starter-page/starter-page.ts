@@ -1,6 +1,9 @@
 import { IRoute, IRouteableComponent, Parameters } from '@aurelia/router';
+import { TheHook } from '../../infra/hook';
+import { TheSecondHook } from '../../infra/second-hook';
 
 export class StarterPage implements IRouteableComponent {
+    static dependencies = [TheHook, TheSecondHook];
     static routes: IRoute[] = [
         {
             path: '',

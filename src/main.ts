@@ -1,7 +1,5 @@
 import { RouterConfiguration } from '@aurelia/router';
 import Aurelia /*, { StyleConfiguration }*/ from 'aurelia';
-import { TheHook } from './infra/hook';
-import { TheSecondHook } from './infra/second-hook';
 import { MyApp } from './my-app';
 // Css files imported in this main file are NOT processed by style-loader
 // They are for sharedStyles in shadowDOM.
@@ -20,9 +18,7 @@ Aurelia
             useUrlFragmentHash: false,
             useHref: false,
             navigationSyncStates: ['guardedUnload', 'swapped', 'completed', 'guardedLoad']
-        }),
-        TheHook,
-        TheSecondHook
+        })
     )
     // To use HTML5 pushState routes, replace previous line with the following
     // customized router config.
