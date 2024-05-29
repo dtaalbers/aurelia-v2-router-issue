@@ -7,6 +7,6 @@ export class TheHook {
         console.log('TheHook canLoad', instruction.component.name);
 
         return '/redirect';
-        // return true;
+        //return true;
     }
 }
