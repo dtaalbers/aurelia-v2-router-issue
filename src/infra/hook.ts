@@ -6,7 +6,11 @@ export class TheHook {
     public async canLoad(component: any, params: Parameters, instruction: RoutingInstruction, nav: Navigation) {
         console.log('TheHook canLoad', instruction.component.name);
 
-        return '/redirect';
-        //return true;
+        // if (instruction.component.name === 'second-section') {
+        //     return '/redirect';
+        // }
+
+        // return '/redirect';
+        return true;
     }
 }

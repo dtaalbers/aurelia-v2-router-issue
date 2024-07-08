@@ -5,10 +5,10 @@ import { TheSecondHook } from '../../infra/second-hook';
 export class FirstSection implements IRouteableComponent {
     static dependencies = [TheHook, TheSecondHook];
     static routes: IRoute[] = [
-        // {
-        //     path: '',
-        //     redirectTo: 'first-section-first-child'
-        // } as IRoute,
+        {
+            path: '',
+            redirectTo: 'first-section-first-child'
+        } as IRoute,
         {
             id: 'first-section-first-child',
             path: 'first-section-first-child',
