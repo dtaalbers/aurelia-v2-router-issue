@@ -10,7 +10,7 @@ export class TheHook {
         //     return '/redirect';
         // }
 
-        // return '/redirect';
-        return true;
+        return '/redirect';
+        // return true;
     }
 }

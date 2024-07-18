@@ -16,8 +16,7 @@ Aurelia
     .register(
         RouterConfiguration.customize({
             useUrlFragmentHash: false,
-            useHref: false,
-            navigationSyncStates: ['guardedUnload', 'swapped', 'completed', 'guardedLoad']
+            useHref: false
         })
     )
     // To use HTML5 pushState routes, replace previous line with the following

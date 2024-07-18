@@ -91,7 +91,9 @@ function getAureliaDevAliases() {
         'router',
         'router-lite',
         'runtime',
+        'expression-parser',
         'runtime-html',
+        'template-compiler',
         'testing',
         'state',
         'ui-virtualization'
@@ -104,5 +106,5 @@ function getAureliaDevAliases() {
             /**/
         }
         return map;
-    });
+    }, {});
 }
